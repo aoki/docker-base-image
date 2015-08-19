@@ -1,0 +1,6 @@
+.idea
+.vagrant
+*.tar.xz
+appliance.d
+supermin.d
+!.idea/*.iml
