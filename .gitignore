@@ -3,4 +3,5 @@
 *.tar.xz
 appliance.d
 supermin.d
+secret.sh
 !.idea/*.iml
