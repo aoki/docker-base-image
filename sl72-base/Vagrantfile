@@ -1,0 +1,14 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+VAGRANTFILE_API_VERSION = '2'
+
+SL_VERSION='7.2'
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  config.vm.box = "ringo/scientific-linux-#{SL_VERSION}"
+  config.vm.network :private_network, type: 'dhcp', ip: '192.168.33.0'
+  config.vm.provision :shell,
+                      :path => '../supermin.sh',
+                      :args => [ENV['DOCKER_HUB_USER'], ENV['DOCKER_HUB_PASSWORD'], ENV['DOCKER_HUB_EMAIL'], SL_VERSION]
+end
