@@ -7,4 +7,4 @@ Docekr base image creation scripts for the Scientific Linux.
 
 - [Docker container repository for Scientific Linux][this.project_docker_hub_url]
 
-[this.project_docker_hub_url]: https://registry.hub.docker.com/u/ringo/scientific
+[this.project_docker_hub_url]: https://hub.docker.com/r/ringo/scientific
